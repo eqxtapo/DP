@@ -10,10 +10,6 @@
             <div class="card-body">
               <p class="card-text"> Товар: {{product.name}}</p>
               <p class="card-text"> Описание товара: {{product.description}}</p>
-              <p class="card-text"> Категория товара: {{product.category}}</p>
-              <p class="card-text"> Цена: {{product.purchase_price}}</p>
-              <p class="card-text"> Дата создания: {{product.created_at}}</p>
-              <p class="card-text"> Дата последнего редактирования: {{product.updated_at}}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a class="btn btn-primary" href="{% url 'catalog:product_details' product.pk %}" role="button">Просмотр</a>

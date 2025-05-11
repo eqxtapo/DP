@@ -12,5 +12,5 @@ def contacts(requests):
 
 def product_details(request, pk):
     product = get_object_or_404(Product, pk=pk)
-    context = {"products": product}
+    context = {"product": product}
     return render(request, "catalog/product_details.html", context)
