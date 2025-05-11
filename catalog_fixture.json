@@ -1,0 +1,83 @@
+[
+{
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+        "name": "Банан",
+        "description": "желтый",
+        "photo": "",
+        "category": 2,
+        "purchase_price": "100.00",
+        "created_at": null,
+        "updated_at": null
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+        "name": "Груша",
+        "description": "зеленый",
+        "photo": "",
+        "category": 2,
+        "purchase_price": "100.00",
+        "created_at": null,
+        "updated_at": null
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+        "name": "Лук",
+        "description": "белый",
+        "photo": "",
+        "category": 1,
+        "purchase_price": "50.00",
+        "created_at": null,
+        "updated_at": null
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+        "name": "Морковь",
+        "description": "50",
+        "photo": "",
+        "category": 1,
+        "purchase_price": "50.00",
+        "created_at": null,
+        "updated_at": null
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+        "name": "Огурец",
+        "description": "зеленый",
+        "photo": "",
+        "category": 1,
+        "purchase_price": "200.00",
+        "created_at": null,
+        "updated_at": null
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+        "name": "Овощи",
+        "description": ""
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+        "name": "Фрукты",
+        "description": ""
+    }
+}
+]
