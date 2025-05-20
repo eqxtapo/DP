@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from operator import truediv
 import os
 from pathlib import Path
-
 from django.conf.global_settings import MEDIA_URL
 from dotenv import load_dotenv
 

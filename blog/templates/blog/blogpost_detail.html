@@ -1,3 +1,4 @@
+
 {% extends 'blog/base.html' %}
 {% load blog_tags %}
 {% block content %}
@@ -5,7 +6,7 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
             <div class="card shadow-sm">
-                <img src="{{ post.image | media_filter }}">
+                <img src="{{ object.image | media_filter }}">
                 <div class="card-body">
                     <h2 class="card-text">{{ object.name}}</h2>
                     <p class="card-text">Статья: {{ object.description}}</p>

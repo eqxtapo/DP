@@ -28,4 +28,3 @@ urlpatterns = [
     path('home/', include('catalog.urls', namespace="catalog")),
     path('blog/', include('blog.urls', namespace="blog")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
