@@ -47,9 +47,10 @@ class Product(models.Model):
         blank=True,
         related_name="Product",
     )
-    purchase_price = models.DecimalField(
-        max_digits=10,
-        decimal_places=2,
+    purchase_price = models.IntegerField(
+        verbose_name="Цена",
+        # max_digits=10,
+        # decimal_places=2,
     )
     created_at = models.DateField(
         blank=True,
