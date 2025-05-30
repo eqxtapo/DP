@@ -9,7 +9,7 @@ class HomeView(ListView):
     model = Product
 
 
-class ContactsView(TemplateView):
+class ContactsView(LoginRequiredMixin, TemplateView):
     template_name = "catalog/contacts.html"
 
 
