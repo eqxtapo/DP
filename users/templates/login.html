@@ -7,9 +7,10 @@
     <div class="row">
         <div class="col">
             <form class="row" method="post" enctype="multipart/form-data">
+
                 <div class="card">
                     <div class="card-body">
-                        {%  csrf_token %}
+                        {% csrf_token %}
                         {{ form.as_p }}
                     </div>
                     <button type="submit" class="btn btn-primary">
