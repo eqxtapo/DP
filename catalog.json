@@ -1,0 +1,94 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Овощи",
+      "description": "Овощи — кулинарный термин, обозначающий съедобную часть некоторых растений."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Фрукты",
+      "description": "Сочные съедобные плоды растения."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Не определено",
+      "description": "Нечто нам не понятное."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Ягоды",
+      "description": "это плод с однородной сочной мякотью и мелкими семенами"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Огурец",
+      "description": "широко культивируемое ползучее виноградное растение семейства Тыквенных",
+      "photo": "catalog/photo/g_HhdnzC7.jfif",
+      "category": 1,
+      "purchase_price": 100,
+      "created_at": "2025-06-02",
+      "updated_at": "2025-06-02",
+      "publication_status": false,
+      "owner": 1
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Яблоко",
+      "description": "Сочный плод яблони",
+      "photo": "catalog/photo/a_k15NLDX.jpeg",
+      "category": 2,
+      "purchase_price": 150,
+      "created_at": "2025-06-02",
+      "updated_at": "2025-06-02",
+      "publication_status": false,
+      "owner": 1
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Банан",
+      "description": "Съедобный плод культивируемых растений рода Банан",
+      "photo": "catalog/photo/y_J7zM5J2.jpg",
+      "category": 4,
+      "purchase_price": 200,
+      "created_at": "2025-06-02",
+      "updated_at": "2025-06-02",
+      "publication_status": false,
+      "owner": 1
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Bootstrap",
+      "description": "Популярный фреймворк для создания сайтов и веб-приложений с открытым исходным кодом",
+      "photo": "catalog/photo/Bootstrap_logo.svg_TzQQOn6.png",
+      "category": 3,
+      "purchase_price": 999999999,
+      "created_at": "2025-06-02",
+      "updated_at": "2025-06-02",
+      "publication_status": false,
+      "owner": 1
+    }
+  }
+]
