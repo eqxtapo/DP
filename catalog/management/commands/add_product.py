@@ -9,7 +9,7 @@ class Command(BaseCommand):
         Category.objects.all().delete()
         Product.objects.all().delete()
 
-        call_command('loaddata', 'catalog_fixture.json')
+        call_command('loaddata', 'catalog.json')
         category, _ = Category.objects.get_or_create(name='Ягоды')
 
         products = [
