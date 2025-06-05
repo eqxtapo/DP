@@ -1,18 +1,43 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, TemplateView, DeleteView, CreateView, UpdateView
-from catalog.models import Product
+from catalog.models import Product, Category
 from catalog.forms import ProductForm, ProductModeratorForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.core.exceptions import PermissionDenied
 
+from catalog.service import get_products_from_cache, get_products_by_category
+
+
 class HomeView(ListView):
     model = Product
 
+    def get_queryset(self):
+        return get_products_from_cache()
 
 class ContactsView(LoginRequiredMixin, TemplateView):
     template_name = "catalog/contacts.html"
 
+
+class CategoryListView(ListView):
+    """Страница категории"""
+
+    model = Category
+    template_name = "catalog/categories_list.html"
+
+
+class ProductsByCategoryListView(LoginRequiredMixin, ListView):
+    model = Category
+
+    def get(self, request, category_name):
+        category_name = get_object_or_404(Category, name=category_name)
+        products = get_products_by_category(category_name)
+
+        return render(
+            request,
+            "catalog/products_by_category.html",
+            {"catalog": category_name, "products": products},
+        )
 
 
 class ProductDetailView(LoginRequiredMixin, DetailView):
